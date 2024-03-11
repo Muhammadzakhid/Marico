@@ -41,16 +41,19 @@
     font-family: 'Poppins', sans-serif, serif;
 }
 
-/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Home page section styles */
+/* ########################################## Home page section begin ######################################### */
+
 /* Style for the background of the desktop version */
-.home,
+.home {
+    background: #000;
+}
+
 /* Style for the background of the mobile version */
 .home_mb {
     background: #000;
@@ -77,20 +80,51 @@
 }
 
 /* Styling for the main title on the page */
-.main_title,
-/* Styling for the opinion title with a linear gradient */
-.main_title_opinion {
+.main_title {
     font-size: 100px;
     font-weight: 700;
     color: #fff;
 }
 
-.info_about,
-.btn_custom2,
-.users b,
-.about_main_title,
+/* Styling for the opinion title with a linear gradient */
+.main_title_opinion {
+    font-size: 100px;
+    font-weight: 700;
+    background: linear-gradient(to right, #ff4e50, #f9d423);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.info_about {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.btn_custom2 {
+    padding: 16px 60px;
+}
+
+.users {
+    color: gray;
+    font-size: 18px;
+}
+
+b {
+    color: #fff;
+}
+
+.about_main_title {
+    font-size: 70px;
+    font-weight: 600;
+    color: #fff;
+}
+
 .about_titles {
     color: #fff;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .about_titles_text {
@@ -99,20 +133,54 @@
     color: grey;
 }
 
-/* Step 1 styles */
+/* ########################################## Home page section end ######################################### */
+
+/* ########################################## Step 1 begin ######################################### */
+
 .step_1 {
     background: #000;
 }
 
-.section_number,
-.section_title,
-.section_title_text,
-.homepage,
-.content_title,
-.ads {
-    color: #fff;
+.section_number {
+    color: rgb(61, 130, 242);
+    font-size: 25px;
+    font-weight: 600;
 }
 
+.section_title {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.section_title_text {
+    font-size: 30px;
+    font-weight: 400;
+    color: gray;
+}
+
+.btn_custom3 {
+    padding: 20px 35px;
+    color: gray;
+}
+
+.homepage {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.content_title {
+    color: #fff;
+    font-size: 75px;
+    font-weight: 600;
+}
+
+.ads {
+    color: #fff;
+    font-size: 75px;
+    font-weight: 600;
+}
 .ads2 {
     color: rgb(60, 130, 244);
 }
@@ -122,16 +190,33 @@
     font-size: 23px;
     font-weight: 400;
 }
+/* ########################################## Step 1 end ######################################### */
 
-/* Other information styles */
-.step_2,
-.btn_custom4,
-.step_3,
+
+
+/* ########################################## Other information begin ######################################### */
+
+.step_2 {
+    background: #000;
+}
+
+.btn_custom4 {
+    padding: 20px 80px;
+    border-radius: 10px;
+}
+
+.step_3 {
+    background: #000;
+}
+
 .step_4 {
     background: #000;
 }
 
-/* Footer section styles */
+/* ########################################## Other information end ######################################### */
+
+/* ########################################## Footer section begin ######################################### */
+
 .footer {
     background: #000;
 }
@@ -140,7 +225,12 @@
     list-style: none;
 }
 
-/* Media queries */
+/* ########################################## Footer section end ######################################### */
+
+/* ########################################## Responsive section begin ######################################### */
+
+
+
 /* Media query for screens with a maximum width of 768px */
 @media screen and (max-width: 768px) {
     /* Display the mobile version and hide the desktop version */
@@ -173,43 +263,43 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    /* Adjust font sizes for smaller screens */
-    .main_title,
+@media screen and (max-width: 768px){
+    .main_title {
+        font-size: 60px;
+    }
     .main_title_opinion {
         font-size: 60px;
     }
-
     .info_about {
         font-size: 40px;
     }
-
-    .section_title,
-    .content_title {
+    .section_title {
         font-size: 45px;
     }
-
     .about_titles_text {
         font-size: 16px;
     }
-
+    .content_title {
+        font-size: 40px;
+    }
     .homepage {
         font-size: 25px;
     }
-
     .ads {
         font-size: 40px;
     }
 }
 
 @media screen and (max-width: 375px) {
-    /* Further adjustments for even smaller screens */
-    .main_title,
+    .main_title{
+        font-size: 50px;
+    }
     .main_title_opinion {
         font-size: 50px;
     }
-
     .about_main_title {
         font-size: 30px;
-    }
+    }  
 }
+
+/* ########################################## Responsive section end ######################################### */
